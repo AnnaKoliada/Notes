@@ -1,0 +1,26 @@
+$flex: flex;
+$wrap: wrap;
+
+.wrapper {
+  display: $flex;
+  padding: 1rem;
+  flex-wrap: $wrap;
+}
+.wrapperLeft,
+.wrapperRight {
+  flex-basis: 50%;
+  flex-wrap: $wrap;
+  display: $flex;
+  flex-direction: column;
+
+  .form {
+    display: $flex;
+    flex-wrap: $wrap;
+    justify-content: center;
+    padding: 1rem;
+  }
+}
+// .wrapperRight{
+//     flex-basis: 50%;
+
+// }
