@@ -9,6 +9,7 @@ function Cards() {
   const items = useSelector((state: RootStateOrAny) => state.items);
   const [popapActive, setPopapActive] = useState<boolean>(true);
   const [dataItem, setDataItem] = useState<Iitem | undefined>();
+  
   return (
     <div className={s.cardContainer}>
       {items.map((item: Iitem) => {
